@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{%static "css\design_s.css" %}"/>
+    <title> STUDENT </title>
+    <link rel="stylesheet" href="{%static "css\desigen_s.css" %}"/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body id='bg'style="background-image:url('{% static 'image\backgrund.png'%}');">
+    <div class="table1">
+        <table border="0">
+            <tr><td> Academic Advising System</td></tr>
+        </table>
+    </div>
+
+    <div class="foto1">
+        <img id="p1" src="{% static "image\Mor.png" %}" alt="uh oh no image" >
+    </div>
+
+    <div class="tag_Page">
+        <h2> Student </h2>
+    </div>
+
+    <form class="form1">
+        <p>Student Name : ---</p>
+        <p>Student ID : ------</p>
+        <p>Student E-mail : -----</p>
+        <p>Specialization :------</p>
+        <p>College : ------</p>
+        <p>Name Advisor : ----</p>
+        <p>GPA : ---</p>
+        <p>Plan Hours : ----</p>
+        <p>Passed Hours : ----</p>
+        <P>Remaining Hours : -----</P>
+        <p>Number of Alarms : ----- </p>
+
+    </form>
+     
+    <div class="form2">
+            <a href="{% url 'Chat' %}"> Chat </a> 
+    </div>
+
+    <div class="form3">
+        <a href="{% url 'BookAppointment' %}"> Book Appointment </a> 
+   </div>
+
+   <div class="form4">
+    <a href="{% url 'GetCourseInfo' %}"> Get Course Info </a>
+  </div>
+  
+   
+  <div class="foto2">
+     <img id="p1" src="{% static "image\logoKKu.png"  %}" alt="uh oh no image" >
+     
+  </div>
+
+  <div class="foto3">
+    <img id="p1" src="{% static "image\2030.png"  %}" alt="uh oh no image" >
+ </div>
+
+
+
+</body>
+</html>
